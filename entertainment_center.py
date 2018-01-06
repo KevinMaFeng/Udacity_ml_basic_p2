@@ -9,11 +9,12 @@ import urllib
 # check image or movie url is valid or not
 def is_invalid_url(url):
     try:
-        urllib.urlopen(url)
+        handler = urllib.urlopen(url)
     except Exception:
         print url + "=urlopen error"
         return True
-
+    
+    handler.close()
     return False
 
 #check the image url and movie url are valid or not
