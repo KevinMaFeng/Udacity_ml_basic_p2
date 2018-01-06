@@ -8,8 +8,6 @@ import urllib
 
 # check image or movie url is valid or not
 def is_invalid_url(url):
-    #opener = urllib.request.build_opener()
-    #opener.addheaders = [('User-agent', 'Mozilla/49.0.2')]
     try:
         urllib.urlopen(url)
     except Exception:
