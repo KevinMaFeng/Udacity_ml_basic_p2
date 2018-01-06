@@ -10,6 +10,7 @@ import urllib
 
 # check a url is valid or not
 def is_invalid_url(url):
+    """check a url is valid or not"""
     try:
         handler = urllib.urlopen(url)
     except Exception:
@@ -21,6 +22,7 @@ def is_invalid_url(url):
 
 #check the image and movie url are valid or not
 def all_url_is_good(movies):
+    
     for mov in movies:
         if is_invalid_url(mov.get_poster_image_url()):
             return False
