@@ -26,7 +26,7 @@ def is_invalid_url(url):
     return False
 
 
-def all_url_is_good(movies):
+def urls_are_good(movies):
     """
     ensure both image and movie links are good.
     input:Movie class list
@@ -60,7 +60,7 @@ dragon_fighter = media.Movie(r"Dragon Ball FighterZ",
 movies = [starwar, avadar2, dragon_fighter]
 
 # need check before pass the URLs to the static HTML page.
-if not all_url_is_good(movies):
+if not urls_are_good(movies):
     print "Urls check failed."
 else:
     try:
