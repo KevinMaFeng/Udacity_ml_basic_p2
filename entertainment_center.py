@@ -6,9 +6,9 @@ import fresh_tomatoes
 import webbrowser
 import urllib
 
-"""The main module to start to build the static HTML page with url link check method imple."""
 
-# check a url is valid or not
+
+
 def is_invalid_url(url):
     """
     check a url is valid or not.
