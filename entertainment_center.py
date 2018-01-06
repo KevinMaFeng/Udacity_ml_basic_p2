@@ -11,7 +11,7 @@ import urllib
 
 def is_invalid_url(url):
     """
-    check a url is valid or not.
+    check if a url is valid or not.
     input:url link
     output:True if url is invalid.
            False if url is valid.
@@ -28,7 +28,7 @@ def is_invalid_url(url):
 
 def all_url_is_good(movies):
     """
-    check image and movie link are valid.
+    ensure both image and movie links are good.
     input:Movie class list
     output:True if check passed.
            False if check failed.
