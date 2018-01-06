@@ -6,7 +6,9 @@ import fresh_tomatoes
 import webbrowser
 import urllib
 
-# check image or movie url is valid or not
+"""The main module to start to build the static HTML page with url link check method imple."""
+
+# check a url is valid or not
 def is_invalid_url(url):
     try:
         handler = urllib.urlopen(url)
@@ -17,7 +19,7 @@ def is_invalid_url(url):
     handler.close()
     return False
 
-#check the image url and movie url are valid or not
+#check the image and movie url are valid or not
 def all_url_is_good(movies):
     for mov in movies:
         if is_invalid_url(mov.get_poster_image_url()):
